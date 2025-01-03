@@ -26,7 +26,7 @@
             <li class="main"><a href="#">الرئيسية</a></li>
             <li><a href="#">طريقة عمل</a></li>
             <li><a href="#">من نحن</a></li>
-            <button class="btn-primary">تسجيل دخول</button>
+            <button class="btn-primary" id="loginButton">تسجيل دخول</button>
           </ul>
         </nav>
       </div>
@@ -61,5 +61,11 @@
       </div>
     </section>
     <!-- End Hero -->
+    <script>
+      const loginButton = document.getElementById("loginButton");
+      loginButton.addEventListener("click", function () {
+        window.location.href = "login-form/login.html";
+      });
+    </script>
   </body>
 </html>
